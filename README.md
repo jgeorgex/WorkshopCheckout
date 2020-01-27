@@ -43,3 +43,25 @@ shop.checkout('AA') # => 100 <br>
 shop.checkout('ABCD') # => 115 <br>
 shop.checkout('AAA') # => 130 <br>
 shop.checkout('AAAAAA') # => 260 <br>
+
+### TDD Plan
+
+shop.checkout('A') # => 50 <br>
+shop.checkout('AA') # => 100 <br>
+shop.checkout('B') # => 30 <br>
+shop.checkout('C') # => 20 <br>
+shop.checkout('CC') # => 40 <br>
+shop.checkout('CCC') # => 60 <br>
+shop.checkout('CCCC') # => 80 <br>
+shop.checkout('CCCCCC') # => 120 <br>
+shop.checkout('D') # => 15 <br>
+shop.checkout('DDDDD') # => 75 <br>
+shop.checkout('ABCD') # => 115 <br>
+shop.checkout('AAA') # => 130 <br>
+shop.checkout('AAAAAA') # => 260 <br>
+shop.checkout('aBc') # => -1 <br>
+shop.checkout('-B8x') # => -1 <br>
+shop.checkout(18) # => -1 <br>
+shop.checkout('BBBB') # => 90 <br>
+shop.checkout('BBBBBB') # => 135 <br>
+shop.checkout('AAAAAABBBB') # => 350 <br>
