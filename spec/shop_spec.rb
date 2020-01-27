@@ -24,6 +24,31 @@ describe "Shop" do
             expect(shop.checkout("C")).to eq(20)
         end
 
+        it "returns 40 when input is CC" do
+            shop = Shop.new
+            expect(shop.checkout("CC")).to eq(40)
+        end
+
+        it "returns 60 when input is CCC" do
+            shop = Shop.new
+            expect(shop.checkout("CCC")).to eq(60)
+        end
+
+        it "returns 80 when input is CCCC" do
+            shop = Shop.new
+            expect(shop.checkout("CCCC")).to eq(80)
+        end
+
+        it "returns 120 when input is CCCCCC" do
+            shop = Shop.new
+            expect(shop.checkout("CCCCCC")).to eq(120)
+        end
+
+        it "returns 15 when input is D" do
+            shop = Shop.new
+            expect(shop.checkout("D")).to eq(15)
+        end
+
     end
 
 end
