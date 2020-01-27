@@ -14,6 +14,10 @@ describe "Shop" do
             expect(shop.checkout("AA")).to eq(100)
         end
 
+        it "returns 30 when input is B" do
+            shop = Shop.new
+            expect(shop.checkout("B")).to eq(30)
+        end
     end
 
 end
