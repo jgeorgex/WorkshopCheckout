@@ -16,13 +16,4 @@ describe "Shop" do
 
     end
 
-    describe "#get_values" do
-
-        it "returns 50 when input is A" do
-            shop = Shop.new
-            expect(shop.get_values("A")).to eq(50)
-        end
-
-    end
-
 end

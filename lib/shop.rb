@@ -1,16 +1,14 @@
 class Shop
 
-    def checkout(sku)
-        if sku == "A"
-            return 50
-        elsif sku == "AA"
-            return 100
-        end
+    def initialize
+        @sku_calculator = []
+    end
+
+    def checkout(skus)
+        sku_values = { "A" => 50 }
+        skus.each_char {|x| @sku_calculator << sku_values[x]}
+        @sku_calculator.sum
     end 
 
-    def get_values(single_sku)
-        sku_values = { "A" => 50 }
-        single_sku = sku_values[single_sku]
-    end
 
 end
